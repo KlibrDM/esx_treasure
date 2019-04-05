@@ -21,6 +21,10 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
   TriggerEvent('esx_treasure:checkcheck')
 end)
 
+AddEventHandler('onResourceStart', function()
+  TriggerEvent('esx_treasure:checkcheck')
+end)
+
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
   PlayerData.job = job
